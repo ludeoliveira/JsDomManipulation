@@ -1,0 +1,25 @@
+
+html {
+    display: block;
+    color: white;
+}
+.container {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+}
+.list-items {
+    background-color: pink;
+    list-style: none;
+    border-radius: .5em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 1em 5em;
+    
+
+}
