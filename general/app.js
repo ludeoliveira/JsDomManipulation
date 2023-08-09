@@ -49,22 +49,42 @@
 
 // Modifying the text
 
-li.innerText = 'X-men';
+// li.innerText = 'X-men';
 
 // Modifying Attributes and classes
 
-li.setAttribute('id', 'main-heading'); // gets atribute id with the name main-heading
-li.removeAttribute('id');
+// li.setAttribute('id', 'main-heading'); // gets atribute id with the name main-heading
+// li.removeAttribute('id');
 
-li.classList.add('list-items');
+// li.classList.add('list-items');
 
 // Remove Elements
 
-li.remove();
+// li.remove();
 
 // 4. Traverse the Dom
 //Parent node traversal
 
 let ul = document.querySelector('ul');
 console.log(ul.parentNode);
-console.log(ul.parentElement);
+console.log(ul.parentElement); 
+
+// Child Node Traversal
+
+console.log(ul.childNodes)
+console.log(ul.firstChild)
+console.log(ul.lastChild)
+
+ul.childNodes[1].style.backgroundColor = "blue";
+
+console.log(ul.children);
+
+// 5. Sibling Node Transversal
+
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
+
+const div = document.querySelector('div');
+
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
